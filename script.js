@@ -8,6 +8,8 @@ let currPaintColor = "#000";
 
 // Board Creation
 createGridBoard(gridNumber);
+
+// Initialize or change pixel paint color
 setPaintColor(currPaintColor);
 
 // Add button functionality
@@ -16,9 +18,8 @@ activateButtons();
 function activateButtons() {
 	document.getElementById("clear_grid").addEventListener("click", clearGrid);
 	document.getElementById("resize_grid").addEventListener("click", resizeGrid);
-	document.getElementById("black_button").addEventListener("click", function() {
-		setPaintColor("#000");
-	});
+	document.getElementById("black_button").addEventListener("click", function() { setPaintColor("#000"); });
+	document.getElementById("red_button").addEventListener("click", function() { setPaintColor("#F00"); });
 	document.getElementById("eraser_button").addEventListener("click", eraserMode);
 }
 
@@ -79,7 +80,7 @@ function clearGrid() {
 
 function resizeGrid() {
 	clearGrid();
-	gridNumber = prompt("Please enter the new pixel number");
+	gridNumber = prompt("Please enter the new pixel number"); 
 	createGridBoard(gridNumber);
 	setPaintColor(currPaintColor);
 }
