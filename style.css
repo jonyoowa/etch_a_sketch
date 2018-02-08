@@ -1,0 +1,67 @@
+ /* Stylesheet for Jon's Etch-A-Sketch */
+ * {
+ 	overflow : hidden;
+	white-space: nowrap;
+ }
+
+body {
+	background-color: #FDF3E7;
+}
+
+body > div {
+	display: inline-block;
+	font-family: Droid, Georgia, serif;
+	margin: 20px 50px;
+}
+
+#controls_container {
+	position: relative;
+	top: -550px;
+}
+
+#page_tools > div {
+	display: inline-block;
+	margin: 0 14px;
+	vertical-align: top;
+}
+
+#page_tools > div > * {
+	display: block;
+	font-size: 18px;
+}
+
+#page_tools > div > p {
+	font-weight: bold;
+	text-align: center;
+}
+
+#page_tools > div > button {
+	height: 35px;
+	margin: 4px 0;
+	width: 125px;
+
+	background-color: #A1887F;
+	border: 2px solid black;
+	border-radius: 10% / 25%;
+}
+
+#page_tools > div > button:hover {
+	background-color: #F0F0F0;
+}
+
+#main_container {
+	background-color: #F0F0F0;
+	border: 2px solid black;
+	padding: 0 100px 650px;
+	width: 960px;
+}
+
+ #main_heading {
+	color: #b7a57a;
+	font-size: 60px;
+ 	display: block;
+ 	margin: 72px 0;
+ 	text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;  
+ }
+
